@@ -1,0 +1,26 @@
+package com.klef.jfsd.exam.model;
+
+import jakarta.persistence.Entity;
+
+@Entity
+public class Car extends Vehicle {
+    private int maxSpeed;
+    private int numberOfDoors;
+
+    // Getters and Setters
+    public int getMaxSpeed() {
+        return maxSpeed;
+    }
+
+    public void setMaxSpeed(int maxSpeed) {
+        this.maxSpeed = maxSpeed;
+    }
+
+    public int getNumberOfDoors() {
+        return numberOfDoors;
+    }
+
+    public void setNumberOfDoors(int numberOfDoors) {
+        this.numberOfDoors = numberOfDoors;
+    }
+}

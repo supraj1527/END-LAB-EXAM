@@ -1,0 +1,26 @@
+package com.klef.jfsd.exam.model;
+
+import jakarta.persistence.Entity;
+
+@Entity
+public class Truck extends Vehicle {
+    private int maxSpeed;
+    private int loadCapacity;
+
+    // Getters and Setters
+    public int getMaxSpeed() {
+        return maxSpeed;
+    }
+
+    public void setMaxSpeed(int maxSpeed) {
+        this.maxSpeed = maxSpeed;
+    }
+
+    public int getLoadCapacity() {
+        return loadCapacity;
+    }
+
+    public void setLoadCapacity(int loadCapacity) {
+        this.loadCapacity = loadCapacity;
+    }
+}
